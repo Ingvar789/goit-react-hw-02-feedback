@@ -3,9 +3,8 @@ import React, { Component } from 'react';
 import { Container } from './App.styled';
 
 import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
-import SectionFeedback from 'components/SectionFeedback/SectionFeedback';
+import Section from 'components/Section/Section';
 import Statistics from 'components/Statistics/Statistics';
-import SectionStatistics from 'components/SectionStatistics/SectionStatistics';
 import Notification from 'components/Notification/Notification';
 
 class App extends Component{
@@ -38,13 +37,14 @@ class App extends Component{
       
       <Container>
 
-        <SectionFeedback title="Please leave feedback"/>
+        <Section title="Please leave feedback">
         <FeedbackOptions
           options={Object.keys(this.state)}
           onLeaveFeedback={this.onLeaveFeedback}
         />
-
-        <SectionStatistics title="Statistics"/>
+        </Section>
+        
+        <Section title="Statistics">
 
         {this.countTotalFeedback() === 0 ? (
           <Notification message="There is no feedback"/>
@@ -56,7 +56,8 @@ class App extends Component{
             total={this.countTotalFeedback()}
             positivePercentage={this.countPositiveFeedbackPercentage()}
         />  
-        )}
+          )}
+          </Section>
         </Container>
   );
   }
