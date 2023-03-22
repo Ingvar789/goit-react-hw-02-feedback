@@ -1,5 +1,3 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const SectionStyled = styled.section`
-
-`
+export const SectionStyled = styled.section``;
