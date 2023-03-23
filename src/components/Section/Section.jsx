@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import {SectionStyled} from './Section.styled'
+import { SectionStyled } from './Section.styled';
 const Section = ({ title, children }) => (
-    <SectionStyled>
-        <h2>{title}</h2>
-        {children}
-        </SectionStyled>
+  <SectionStyled>
+    <h2>{title}</h2>
+    {children}
+  </SectionStyled>
 );
 
 export default Section;
 
 Section.propTypes = {
-    title: PropTypes.string.isRequired,
-}
+  title: PropTypes.string.isRequired,
+};

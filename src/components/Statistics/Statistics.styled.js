@@ -1,9 +1,9 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const StatisticsStyled = styled.ul`
-display:block;
+  display: block;
 
-.Statistics__item{
-margin-right:10px;
-}
-`
+  .Statistics__item {
+    margin-right: 10px;
+  }
+`;

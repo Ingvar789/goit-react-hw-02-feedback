@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-export const NotificationStyled = styled.p`
-`
+export const NotificationStyled = styled.p``;
